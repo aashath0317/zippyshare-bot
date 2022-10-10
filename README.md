@@ -73,6 +73,8 @@ python3 -m pip install -U zippyshare-downloader
 sudo dockerd
 sudo docker build . -t zippy
 sudo docker run -p 80:80 zippy
+sudo docker ps
+sudo docker stop id
 ```
 
 If still doesn't work properly that means Zippyshare change their code, you can open issue [here](https://github.com/mansuf/zippyshare-downloader/issues)
