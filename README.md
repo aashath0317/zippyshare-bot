@@ -68,6 +68,11 @@ python3 -m pip cache purge zippyshare_downloader
 python3 -m pip uninstall zippyshare-downloader
 python3 -m pip install -U zippyshare-downloader
 
+
+#install
+sudo dockerd
+sudo docker build . -t zippy
+sudo docker run -p 80:80 zippy
 ```
 
 If still doesn't work properly that means Zippyshare change their code, you can open issue [here](https://github.com/mansuf/zippyshare-downloader/issues)
