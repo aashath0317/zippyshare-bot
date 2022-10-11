@@ -15,7 +15,7 @@ def start(Client, message):
         name = x[2].split(":")[1].strip(" ")
         size = x[3].split(":")[1]
         bot.send_document(chat_id, document=name)
-        subprocess.run(["rm","name"])
+        subprocess.run(["rm", name])
     else:
         bot.send_message(chat_id, text="You are not allowed to use this bot")    
     print(prin)
