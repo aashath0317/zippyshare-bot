@@ -3,3 +3,7 @@ requests[socks]
 tqdm
 aiohttp
 zippyshare-downloader
+python-telegram-bot
+cryptography
+TgCrypto
+Pyrogram
