@@ -7,13 +7,14 @@ def start(Client, message):
     chat_id = int(message.chat.id)
     link = message.text
     if chat_id == 1273430546:
-        bot.send_message(chat_id, text= "Downloading......" )
+        bot.send_message(chat_id, text= "Downloading...... )
         prin = subprocess.run(["zippyshare-dl", link], capture_output=True, text=True).stdout.strip("\n")
-        bot.send_message(chat_id, text= "Download Success....." )
-        bot.send_message(chat_id, text= "Uploading to telegram.....")
         x=prin.split("\n")
         name = x[2].split(":")[1].strip(" ")
         size = x[3].split(":")[1]
+        bot.send_message(chat_id, text= f"Download Success..... \nFile info \n\nFile Name = {name}\nSize = {size}" )
+        bot.send_message(chat_id, text= "Uploading to telegram.....")
+        x=prin.split("\n")
         bot.send_document(chat_id, document=name)
         subprocess.run(["rm", name])
     else:
