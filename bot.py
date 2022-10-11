@@ -7,7 +7,7 @@ def start(Client, message):
     chat_id = int(message.chat.id)
     link = message.text
     if chat_id == 1273430546:
-        bot.send_message(chat_id, text= "Downloading...... )
+        bot.send_message(chat_id, text= "Downloading......" )
         prin = subprocess.run(["zippyshare-dl", link], capture_output=True, text=True).stdout.strip("\n")
         x=prin.split("\n")
         name = x[2].split(":")[1].strip(" ")
