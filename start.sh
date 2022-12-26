@@ -1,2 +1,2 @@
 python3 setup.py install
-python3 bot.py
+python3 haack.py
